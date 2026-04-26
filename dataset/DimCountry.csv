@@ -1,0 +1,7 @@
+CountryKey,CountryName,RiskLevel,AMLScore,FATFBlacklisted
+1,Thailand,Low,20,0
+2,Singapore,Low,15,0
+3,Malaysia,Medium,40,0
+4,Cambodia,High,75,1
+5,Myanmar,High,80,1
+6,Nigeria,High,85,1

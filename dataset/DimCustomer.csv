@@ -1,0 +1,101 @@
+CustomerKey,CustomerID,FullName,DateOfBirth,Gender,Occupation,MonthlyIncome,CustomerRiskLevel,KYCStatus,CountryOfResidence,PEPFlag
+1,CUST00001,Customer_1,1998-09-07,M,Business Owner,65015,Low,Verified,Singapore,0
+2,CUST00002,Customer_2,1974-12-30,F,Employee,137096,Low,Verified,Malaysia,0
+3,CUST00003,Customer_3,1971-02-14,M,Employee,122059,Low,Verified,Thailand,0
+4,CUST00004,Customer_4,2003-04-07,M,Freelancer,125687,Low,Verified,Thailand,0
+5,CUST00005,Customer_5,1982-05-04,M,Employee,102939,Low,Verified,Thailand,0
+6,CUST00006,Customer_6,1980-12-26,F,Employee,164213,Low,Verified,Thailand,0
+7,CUST00007,Customer_7,1980-01-06,M,Employee,120878,High,Verified,Thailand,0
+8,CUST00008,Customer_8,1976-04-05,M,Freelancer,179899,Low,Verified,Thailand,0
+9,CUST00009,Customer_9,2003-01-14,M,Employee,77623,Low,Verified,Singapore,0
+10,CUST00010,Customer_10,1974-08-07,F,Business Owner,90450,Low,Verified,Thailand,0
+11,CUST00011,Customer_11,2000-05-10,M,Freelancer,108426,High,Verified,Thailand,0
+12,CUST00012,Customer_12,2003-03-24,M,Business Owner,132845,Medium,Verified,Thailand,0
+13,CUST00013,Customer_13,2010-01-08,M,Freelancer,168371,Low,Verified,Thailand,0
+14,CUST00014,Customer_14,1994-06-19,M,Employee,58585,Low,Verified,Thailand,0
+15,CUST00015,Customer_15,1973-11-25,F,Business Owner,124225,Medium,Verified,Thailand,0
+16,CUST00016,Customer_16,1996-06-27,M,Freelancer,79044,Low,Verified,Thailand,0
+17,CUST00017,Customer_17,1988-12-04,F,Student,188629,Low,Verified,Thailand,0
+18,CUST00018,Customer_18,1971-06-05,F,Employee,195152,Low,Verified,Thailand,0
+19,CUST00019,Customer_19,1971-05-04,F,Freelancer,124556,Low,Verified,Thailand,1
+20,CUST00020,Customer_20,1974-03-16,M,Student,17693,Medium,Verified,Thailand,0
+21,CUST00021,Customer_21,1979-10-23,F,Freelancer,110259,High,Verified,Singapore,0
+22,CUST00022,Customer_22,1980-06-08,M,Student,40939,Low,Verified,Thailand,0
+23,CUST00023,Customer_23,1992-09-01,F,Employee,194997,Low,Verified,Thailand,0
+24,CUST00024,Customer_24,1997-01-02,F,Business Owner,189013,Low,Verified,Thailand,0
+25,CUST00025,Customer_25,1971-03-11,F,Student,167906,Medium,Verified,Thailand,0
+26,CUST00026,Customer_26,1995-03-06,F,Freelancer,33047,Medium,Verified,Thailand,0
+27,CUST00027,Customer_27,1978-12-02,F,Employee,41105,Medium,Verified,Thailand,0
+28,CUST00028,Customer_28,2002-02-13,F,Student,90766,Medium,Verified,Thailand,0
+29,CUST00029,Customer_29,1999-02-25,F,Freelancer,161779,Low,Verified,Thailand,0
+30,CUST00030,Customer_30,2001-06-17,F,Freelancer,168048,Low,Verified,Thailand,0
+31,CUST00031,Customer_31,1994-06-12,M,Freelancer,59262,Low,Verified,Thailand,0
+32,CUST00032,Customer_32,1988-10-26,M,Student,140117,Medium,Verified,Thailand,0
+33,CUST00033,Customer_33,1979-11-21,F,Student,38776,Low,Verified,Thailand,0
+34,CUST00034,Customer_34,1990-02-24,F,Student,176152,Low,Verified,Malaysia,0
+35,CUST00035,Customer_35,1996-06-07,F,Business Owner,143376,Low,Verified,Thailand,0
+36,CUST00036,Customer_36,1982-06-24,M,Student,152848,Low,Verified,Thailand,0
+37,CUST00037,Customer_37,2006-04-23,F,Student,107787,Low,Verified,Thailand,0
+38,CUST00038,Customer_38,2008-12-29,M,Student,142948,Low,Verified,Thailand,0
+39,CUST00039,Customer_39,1970-04-17,M,Business Owner,70016,Low,Verified,Thailand,0
+40,CUST00040,Customer_40,2004-01-15,M,Student,155546,Low,Verified,Thailand,0
+41,CUST00041,Customer_41,2006-02-23,M,Freelancer,36959,Low,Verified,Thailand,0
+42,CUST00042,Customer_42,1977-02-28,M,Student,151602,Low,Verified,Malaysia,0
+43,CUST00043,Customer_43,2001-04-26,F,Freelancer,134101,Medium,Verified,Singapore,0
+44,CUST00044,Customer_44,1988-12-16,F,Freelancer,18748,Low,Verified,Thailand,0
+45,CUST00045,Customer_45,1985-04-06,F,Freelancer,28545,Low,Verified,Thailand,0
+46,CUST00046,Customer_46,1982-06-19,F,Business Owner,142659,Medium,Verified,Thailand,0
+47,CUST00047,Customer_47,1976-12-22,F,Business Owner,180838,Low,Verified,Thailand,0
+48,CUST00048,Customer_48,1979-08-29,M,Business Owner,88530,Medium,Verified,Thailand,0
+49,CUST00049,Customer_49,2004-04-01,F,Student,108557,Low,Verified,Thailand,0
+50,CUST00050,Customer_50,1985-02-05,F,Freelancer,76087,Low,Verified,Thailand,0
+51,CUST00051,Customer_51,1974-08-02,M,Business Owner,83840,Low,Verified,Thailand,0
+52,CUST00052,Customer_52,1974-02-28,F,Business Owner,133451,Low,Verified,Thailand,0
+53,CUST00053,Customer_53,1987-01-16,M,Student,66005,Low,Verified,Malaysia,0
+54,CUST00054,Customer_54,1974-05-04,F,Business Owner,192648,Low,Verified,Thailand,0
+55,CUST00055,Customer_55,1986-02-07,M,Student,54353,High,Verified,Thailand,0
+56,CUST00056,Customer_56,2008-01-07,F,Employee,67733,Low,Verified,Thailand,0
+57,CUST00057,Customer_57,1985-06-06,F,Business Owner,80318,Medium,Verified,Thailand,0
+58,CUST00058,Customer_58,1997-01-30,M,Employee,169736,Low,Verified,Thailand,0
+59,CUST00059,Customer_59,1981-11-12,M,Student,82172,Medium,Verified,Thailand,0
+60,CUST00060,Customer_60,2006-03-16,M,Freelancer,108264,Low,Verified,Thailand,0
+61,CUST00061,Customer_61,1971-12-13,M,Business Owner,41736,Low,Verified,Thailand,0
+62,CUST00062,Customer_62,2002-09-25,M,Student,127859,Low,Verified,Thailand,0
+63,CUST00063,Customer_63,1990-08-11,M,Freelancer,127181,Low,Verified,Thailand,0
+64,CUST00064,Customer_64,1994-01-20,M,Freelancer,146926,Medium,Verified,Thailand,0
+65,CUST00065,Customer_65,1975-08-08,M,Employee,105084,Low,Verified,Singapore,0
+66,CUST00066,Customer_66,1986-12-24,F,Student,184695,Low,Verified,Thailand,0
+67,CUST00067,Customer_67,1973-07-15,F,Freelancer,22392,Low,Verified,Thailand,0
+68,CUST00068,Customer_68,1994-10-06,M,Business Owner,70680,Low,Verified,Thailand,0
+69,CUST00069,Customer_69,1983-02-25,F,Business Owner,192789,High,Verified,Thailand,0
+70,CUST00070,Customer_70,2007-03-16,F,Employee,65859,High,Verified,Thailand,1
+71,CUST00071,Customer_71,1998-03-14,F,Freelancer,140657,High,Verified,Thailand,0
+72,CUST00072,Customer_72,1997-09-29,F,Student,172381,Low,Verified,Thailand,0
+73,CUST00073,Customer_73,2009-09-20,M,Business Owner,85467,Low,Verified,Thailand,0
+74,CUST00074,Customer_74,2008-08-27,F,Freelancer,198734,High,Verified,Thailand,0
+75,CUST00075,Customer_75,1986-03-23,M,Freelancer,113506,Low,Verified,Thailand,1
+76,CUST00076,Customer_76,1995-11-25,F,Employee,124751,High,Verified,Thailand,0
+77,CUST00077,Customer_77,1978-08-17,F,Business Owner,133906,High,Verified,Thailand,0
+78,CUST00078,Customer_78,2001-08-09,F,Business Owner,158760,Medium,Verified,Thailand,0
+79,CUST00079,Customer_79,1973-02-13,M,Student,40342,Low,Verified,Thailand,0
+80,CUST00080,Customer_80,1972-01-21,F,Business Owner,183229,Low,Verified,Singapore,0
+81,CUST00081,Customer_81,1999-08-31,M,Student,121308,Medium,Verified,Thailand,0
+82,CUST00082,Customer_82,1980-03-22,F,Business Owner,198155,Low,Verified,Thailand,0
+83,CUST00083,Customer_83,2004-09-04,M,Employee,121081,Low,Verified,Thailand,0
+84,CUST00084,Customer_84,1982-12-25,F,Business Owner,104045,Low,Verified,Thailand,0
+85,CUST00085,Customer_85,1973-07-31,M,Student,49698,High,Verified,Thailand,0
+86,CUST00086,Customer_86,2008-05-14,M,Student,125078,Low,Verified,Thailand,0
+87,CUST00087,Customer_87,1980-06-11,F,Employee,95623,Low,Verified,Malaysia,0
+88,CUST00088,Customer_88,2008-11-13,M,Business Owner,37671,Low,Verified,Thailand,0
+89,CUST00089,Customer_89,1974-07-13,F,Business Owner,171256,Low,Verified,Thailand,0
+90,CUST00090,Customer_90,1987-01-19,F,Employee,108384,High,Verified,Thailand,0
+91,CUST00091,Customer_91,1982-06-21,F,Business Owner,188179,Low,Verified,Thailand,0
+92,CUST00092,Customer_92,1990-05-04,F,Business Owner,101202,Low,Verified,Thailand,0
+93,CUST00093,Customer_93,1998-07-08,F,Student,66663,Medium,Verified,Malaysia,0
+94,CUST00094,Customer_94,2007-06-02,F,Business Owner,30708,Medium,Verified,Thailand,0
+95,CUST00095,Customer_95,1986-05-14,F,Business Owner,106906,Low,Verified,Malaysia,0
+96,CUST00096,Customer_96,1977-04-18,F,Employee,64811,Medium,Verified,Malaysia,0
+97,CUST00097,Customer_97,1986-08-10,F,Employee,148883,Low,Verified,Thailand,0
+98,CUST00098,Customer_98,1985-12-08,F,Freelancer,71250,Low,Verified,Thailand,0
+99,CUST00099,Customer_99,1979-05-26,F,Student,127547,Medium,Verified,Thailand,0
+100,CUST00100,Customer_100,2000-01-24,M,Business Owner,139249,Medium,Verified,Thailand,0
