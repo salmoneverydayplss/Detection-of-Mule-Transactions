@@ -1,13 +1,15 @@
 # Detection-of-Mule-Transactions
 Project of DE471 Data Analytics and Business Intelligence
 
-## Data Source 
-
-
-Source Link : Gen data from AI
-
 ## Detail of Data
-6 tables 
+6 tables  including :
+
+1. **DimAccount** : 150  rows , 9 columns
+2. **DimChannel** : 3 rows , 3 columns
+3. **DimCountry** : 6 rows , 5 columns
+4. **DimCustomer** : 100 rows , 11 columns
+5. **DimDate** : 365 rows , 8 columns
+6. **FactTracsactions** : 1000 rows , 12 columns
 
 ## Overview
 This banking dataset is a specialized collection of customer profiles and transactional logs designed to identify "mule" behaviors by highlighting contradictions between a user's reported status and their actual financial activity. It integrates demographic data, such as monthly income and occupation, with transactional behaviors, specifically monitoring the patterns of incoming and outgoing funds. Furthermore, it incorporates risk-based indicators such as AML scores for destination countries and temporal flags for weekend activity, allowing analysts to map out the "pass-through" patterns typical of money laundering. Essentially, this data source provides the multi-dimensional evidence needed to detect high-risk accounts that serve as temporary transit points for illicit funds.
@@ -117,3 +119,60 @@ Transaction values fluctuated heavily after June. Indicates irregular burst-like
 
 Key insight : 
 Sudden growth + high volatility are strong warning signs.  Continuous monitoring is needed to detect suspicious accounts early.
+
+**4.Which countries are most associated with suspicious transactions?**
+
+Visualization : 
+  Bar chart : Show the total of  mule transaction 
+  Text : Show the AML Risk Scores
+
+<img src="image/Where.png" width="500">
+
+Key Finding : 
+1. Countries with scores above 75, such as Nigeria and Myanmar, showed the highest concentration of mule-account behavior.  
+
+Key Insight : <br>
+AML Risk Scores show that Thailand has the highest link to mule accounts despite its low overall risk score
+
+
+**5.Why do customers with low Monthly Income conduct high-value transactions?**
+
+Visualization : <br>
+  Scatter plot : Show the distribution of turn over  compare with income
+
+<img src="image/why.png" width="500">
+
+Key Finding :  <br>
+1. Customers earning below 50,000 THB with turnover above 200,000 THB show the highest mule-account risk.
+2. Some cases reached extremely high turnover despite low income, a major red flag.
+
+Key Insight : <br>
+Lower income + unusually high transfers = highest suspicious risk.
+
+**6.How can transaction patterns be used to identify mule accounts?** <br>
+ 
+ Visualization : <br>
+  Scatter plot : Show the behaviour of transaction in mule and no mule account
+
+<img src="image/how.png" width="500">
+
+Key Finding : <br>
+1. Data strongly points to Online Banking as the main channel used in suspicious activity.
+2. It enables “Hit & Run” behavior — money is received and quickly transferred out (Account Draining).
+
+Key Insight : <br>
+This pattern differs clearly from normal customer behavior.
+
+## Recommendations
+1. **Behavioral-Based Detection** : <br>
+Shift from static income checks to Behavioral Analytics by monitoring: <br>
+**1.** High In-Out Velocity **2.** Rapid movement of funds **3.** Low ending balances
+2. **Seasonal & Regional Calibration** : <br>
+Apply Dynamic Thresholds during high-risk periods (June) and use a Thailand-specific risk rating.
+3. **Predictive Outreach & Defense** : <br>
+Launch targeted scam awareness campaigns for vulnerable groups and deploy real-time customer alerts.
+
+## Impact
+1. Improves detection of sophisticated mule accounts that stay below traditional risk thresholds.
+2. Reduces gaps between official AML scores and real operational risk.
+3. Prevents mule recruitment and reduces fraud losses through early intervention.
