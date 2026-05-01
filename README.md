@@ -81,6 +81,8 @@ The High Income group has the largest number of detected mule accounts. However,
 Key insight : 
 Customers with lower Monthly Income may be more likely to be involved in suspicious transactions.
 
+Summarize: While the High-Income group accounts for the largest total volume of mule transactions, the Low-Income group carries the highest relative risk, making income level a critical factor in identifying suspicious account behavior.
+
 
 **2.What transaction patterns indicate mule behavior?**
 
@@ -101,6 +103,8 @@ Both groups have outliers, but Group 1 reaches much higher values.
 Key Insight : 
 Transaction Amount is a key feature for identifying mule accounts.
 
+Summarize: Large-value transactions and extreme outliers are the defining characteristics of mule accounts, making high transaction amounts the most critical metric for detecting suspicious movement of funds.
+
 **3.When do suspicious transactions occur most frequently ?**
 
 Visualization : 
@@ -120,6 +124,8 @@ Transaction values fluctuated heavily after June. Indicates irregular burst-like
 Key insight : 
 Sudden growth + high volatility are strong warning signs.  Continuous monitoring is needed to detect suspicious accounts early.
 
+Summarize: Suspicious activity remains relatively stable in the first half of the year but experiences a sharp, volatile surge starting in June, indicating that mid-year periods may be high-risk windows for mule transactions.
+
 **4.Which countries are most associated with suspicious transactions?**
 
 Visualization : 
@@ -133,6 +139,8 @@ Key Finding :
 
 Key Insight : <br>
 AML Risk Scores show that Thailand has the highest link to mule accounts despite its low overall risk score
+
+Summarize: Nigeria, Myanmar, and Cambodia are identified as high-risk markets due to their elevated AML scores; however, Thailand presents a unique anomaly with the highest volume of mule transactions despite maintaining a low official risk rating.
 
 
 **5.Why do customers with low Monthly Income conduct high-value transactions?**
@@ -149,6 +157,8 @@ Key Finding :  <br>
 Key Insight : <br>
 Lower income + unusually high transfers = highest suspicious risk.
 
+Summarize: The strongest indicator of mule activity is a significant mismatch between income and turnover; specifically, customers in the low-income bracket (<50,000$ THB) who move disproportionately high volumes of cash are the highest-risk segment for fraud.
+
 **6.How can transaction patterns be used to identify mule accounts?** <br>
  
  Visualization : <br>
@@ -162,6 +172,8 @@ Key Finding : <br>
 
 Key Insight : <br>
 This pattern differs clearly from normal customer behavior.
+
+Summarize: While normal customers retain significant capital in their accounts, mule behavior is characterized by the immediate depletion of funds, making a sharp drop in "Balance After" a primary indicator of suspicious activity.
 
 ## Recommendations
 1. **Behavioral-Based Detection** : <br>
