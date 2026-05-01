@@ -175,6 +175,22 @@ This pattern differs clearly from normal customer behavior.
 
 Summarize: While normal customers retain significant capital in their accounts, mule behavior is characterized by the immediate depletion of funds, making a sharp drop in "Balance After" a primary indicator of suspicious activity.
 
+## Summarize
+Key behavioral patterns identified:
+
+1. Income vs. Risk: It was found that while high-income groups have the largest total volume of suspicious transactions, the low-income group shows a significantly higher relative risk and propensity for mule activity.
+
+2. Transaction Scale: Larger transaction amounts and extreme financial outliers serve as primary indicators of mule behavior, whereas normal accounts typically feature smaller, clustered amounts.
+
+3. Seasonal Volatility: Suspicious activity is not uniform throughout the year; transactions remain stable from January to May but experience a sharp, volatile surge peaking in June.
+
+4. Geographic Anomaly: High AML risk scores align with mule behavior in countries like Nigeria and Myanmar, but Thailand represents a major outlier with high transaction volumes despite a low official risk rating.
+
+5. Turnover Disparity: A significant mismatch between monthly income and total turnover—specifically low-income customers moving disproportionately high volumes of cash—is a major red flag for fraud.
+
+6. Account Draining: Mule accounts are characterized by "Hit & Run" behavior, where funds are received via online banking and immediately transferred out to leave a near-zero balance.
+
+
 ## Recommendations
 1. **Behavioral-Based Detection** : <br>
 Shift from static income checks to Behavioral Analytics by monitoring: <br>
