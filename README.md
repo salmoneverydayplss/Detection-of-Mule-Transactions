@@ -188,7 +188,7 @@ Key behavioral patterns identified:
 
 5. Turnover Disparity: A significant mismatch between monthly income and total turnover—specifically low-income customers moving disproportionately high volumes of cash—is a major red flag for fraud.
 
-6. Account Draining: Mule accounts are characterized by "Hit & Run" behavior, where funds are received via online banking and immediately transferred out to leave a near-zero balance.
+6. Account Draining: Mule accounts are characterized by rapid fund disbursement, where money is received via online banking and immediately transferred out to leave a near-zero balance, showing a lack of capital retention.
 
 
 ## Recommendations
