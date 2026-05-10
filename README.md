@@ -1,13 +1,15 @@
 # Detection-of-Mule-Transactions
 Project of DE471 Data Analytics and Business Intelligence
 
-## Data Source 
-
-
-Source Link : Gen data from AI
-
 ## Detail of Data
-6 tables 
+6 tables  including :
+
+1. **DimAccount** : 150  rows , 9 columns
+2. **DimChannel** : 3 rows , 3 columns
+3. **DimCountry** : 6 rows , 5 columns
+4. **DimCustomer** : 100 rows , 11 columns
+5. **DimDate** : 365 rows , 8 columns
+6. **FactTracsactions** : 1000 rows , 12 columns
 
 ## Overview
 This banking dataset is a specialized collection of customer profiles and transactional logs designed to identify "mule" behaviors by highlighting contradictions between a user's reported status and their actual financial activity. It integrates demographic data, such as monthly income and occupation, with transactional behaviors, specifically monitoring the patterns of incoming and outgoing funds. Furthermore, it incorporates risk-based indicators such as AML scores for destination countries and temporal flags for weekend activity, allowing analysts to map out the "pass-through" patterns typical of money laundering. Essentially, this data source provides the multi-dimensional evidence needed to detect high-risk accounts that serve as temporary transit points for illicit funds.
@@ -79,6 +81,8 @@ The High Income group has the largest number of detected mule accounts. However,
 Key insight : 
 Customers with lower Monthly Income may be more likely to be involved in suspicious transactions.
 
+Summarize: While the High-Income group accounts for the largest total volume of mule transactions, the Low-Income group carries the highest relative risk, making income level a critical factor in identifying suspicious account behavior.
+
 
 **2.What transaction patterns indicate mule behavior?**
 
@@ -99,6 +103,8 @@ Both groups have outliers, but Group 1 reaches much higher values.
 Key Insight : 
 Transaction Amount is a key feature for identifying mule accounts.
 
+Summarize: Large-value transactions and extreme outliers are the defining characteristics of mule accounts, making high transaction amounts the most critical metric for detecting suspicious movement of funds.
+
 **3.When do suspicious transactions occur most frequently ?**
 
 Visualization : 
@@ -117,3 +123,84 @@ Transaction values fluctuated heavily after June. Indicates irregular burst-like
 
 Key insight : 
 Sudden growth + high volatility are strong warning signs.  Continuous monitoring is needed to detect suspicious accounts early.
+
+Summarize: Suspicious activity remains relatively stable in the first half of the year but experiences a sharp, volatile surge starting in June, indicating that mid-year periods may be high-risk windows for mule transactions.
+
+**4.Which countries are most associated with suspicious transactions?**
+
+Visualization : 
+  Bar chart : Show the total of  mule transaction 
+  Text : Show the AML Risk Scores
+
+<img src="image/Where.png" width="500">
+
+Key Finding : 
+1. Countries with scores above 75, such as Nigeria and Myanmar, showed the highest concentration of mule-account behavior.  
+
+Key Insight : <br>
+AML Risk Scores show that Thailand has the highest link to mule accounts despite its low overall risk score
+
+Summarize: Nigeria, Myanmar, and Cambodia are identified as high-risk markets due to their elevated AML scores; however, Thailand presents a unique anomaly with the highest volume of mule transactions despite maintaining a low official risk rating.
+
+
+**5.Why do customers with low Monthly Income conduct high-value transactions?**
+
+Visualization : <br>
+  Scatter plot : Show the distribution of turn over  compare with income
+
+<img src="image/why.png" width="500">
+
+Key Finding :  <br>
+1. Customers earning below 50,000 THB with turnover above 200,000 THB show the highest mule-account risk.
+2. Some cases reached extremely high turnover despite low income, a major red flag.
+
+Key Insight : <br>
+Lower income + unusually high transfers = highest suspicious risk.
+
+Summarize: The strongest indicator of mule activity is a significant mismatch between income and turnover; specifically, customers in the low-income bracket (<50,000$ THB) who move disproportionately high volumes of cash are the highest-risk segment for fraud.
+
+**6.How can transaction patterns be used to identify mule accounts?** <br>
+ 
+ Visualization : <br>
+  Scatter plot : Show the behaviour of transaction in mule and no mule account
+
+<img src="image/how.png" width="500">
+
+Key Finding : <br>
+1. Data strongly points to Online Banking as the main channel used in suspicious activity.
+2. It enables “Hit & Run” behavior — money is received and quickly transferred out (Account Draining).
+
+Key Insight : <br>
+This pattern differs clearly from normal customer behavior.
+
+Summarize: While normal customers retain significant capital in their accounts, mule behavior is characterized by the immediate depletion of funds, making a sharp drop in "Balance After" a primary indicator of suspicious activity.
+
+## Summarize
+Key behavioral patterns identified:
+
+1. Income vs. Risk: It was found that while high-income groups have the largest total volume of suspicious transactions, the low-income group shows a significantly higher relative risk and propensity for mule activity.
+
+2. Transaction Scale: Larger transaction amounts and extreme financial outliers serve as primary indicators of mule behavior, whereas normal accounts typically feature smaller, clustered amounts.
+
+3. Seasonal Volatility: Suspicious activity is not uniform throughout the year; transactions remain stable from January to May but experience a sharp, volatile surge peaking in June.
+
+4. Geographic Anomaly: High AML risk scores align with mule behavior in countries like Nigeria and Myanmar, but Thailand represents a major outlier with high transaction volumes despite a low official risk rating.
+
+5. Turnover Disparity: A significant mismatch between monthly income and total turnover—specifically low-income customers moving disproportionately high volumes of cash—is a major red flag for fraud.
+
+6. Account Draining: Mule accounts are characterized by rapid fund disbursement, where money is received via online banking and immediately transferred out to leave a near-zero balance, showing a lack of capital retention.
+
+
+## Recommendations
+1. **Behavioral-Based Detection** : <br>
+Shift from static income checks to Behavioral Analytics by monitoring: <br>
+**1.** High In-Out Velocity **2.** Rapid movement of funds **3.** Low ending balances
+2. **Seasonal & Regional Calibration** : <br>
+Apply Dynamic Thresholds during high-risk periods (June) and use a Thailand-specific risk rating.
+3. **Predictive Outreach & Defense** : <br>
+Launch targeted scam awareness campaigns for vulnerable groups and deploy real-time customer alerts.
+
+## Impact
+1. Improves detection of sophisticated mule accounts that stay below traditional risk thresholds.
+2. Reduces gaps between official AML scores and real operational risk.
+3. Prevents mule recruitment and reduces fraud losses through early intervention.
